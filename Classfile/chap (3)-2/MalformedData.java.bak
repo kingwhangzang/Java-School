@@ -1,0 +1,8 @@
+class MalformedData extends RuntimeException 
+{
+	public MalformedData() 
+	{
+		super ("데이터 포멧이 잘못되었습니다");
+		System.out.println("MalformedData : 포멧 오류");
+	}
+}

@@ -1,0 +1,18 @@
+class Student extends Members 
+{
+	String dept;
+	Members students[];
+
+	public Student (String name, String  idnum, String dept) {
+		super(name, dept,idnum);
+	}
+
+	public void setStudents(Members sub[]) {
+		students = sub;
+	}
+
+	public void work() {
+		System.out.println("Student : \"" + name + "(ID : "+id+") "+
+		"\"  studies hard with his Teachers in " +dept +" dept.");
+	}
+}
